@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class AdaptiveUI {
@@ -24,22 +22,21 @@ class AdaptiveUI {
   }
 
   // Get the proportionate height as per screen size
-  static double h(double height) {
+  static double h(dynamic height) {
     double screenHeight = AdaptiveUI.screenHeight;
 
-  
     return (height / screenHeight) * screenHeight;
   }
 
   // Get the proportionate width as per screen size
-  static double w(double width) {
+  static double w(dynamic width) {
     double screenWidth = AdaptiveUI.screenWidth;
 
     return (width / designWidth) * screenWidth;
   }
 
   // Get the proportionate font size as per screen size
-  static double sp(double sp) {
+  static double sp(dynamic sp) {
     double screenWidth = AdaptiveUI.screenWidth;
 
     return (sp / designWidth) * screenWidth;
