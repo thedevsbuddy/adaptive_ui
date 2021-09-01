@@ -2,6 +2,9 @@
 
 A simple helper class to help you creating Adaptive UI easily.
 
+***
+NOTE: This will work well if you have any sort of design file. like - XD, PSD, Figma, AI, Sketch etc because you can get the design height and width from the file. Because this package depends on the actual design size. 
+***
 ### Features
 * Adaptive Font size
 * Adaptive Height
