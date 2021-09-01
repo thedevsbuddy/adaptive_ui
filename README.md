@@ -9,7 +9,7 @@ A simple helper class to help you creating Adaptive UI easily.
 
 ### Helper available
 
-All accepts ```double``` as a parameter 
+All accepts ```dynamic``` as a parameter but you will always provide ```int``` or ```double``` 
 
 #### Extensions
 * ```.sp```
@@ -21,12 +21,23 @@ All accepts ```double``` as a parameter
 * ```w()```
 * ```h()```
 
+
+### Effect
+<img src="https://www.devsbuddy.com/assets/images/img_ss_with_lib.png" />
+<img src="https://www.devsbuddy.com/assets/images/img_ss_without_lib.png" />
+
+
 ### How to use
-Download this helper class and put anywhere inside ```lib``` folder i will suggest create a new folder named ```helper``` and put ```adaptive_ui``` inside it.
 
-Then in your ```constants``` file add two contstants as ```screenWidth``` and ```screenHeight``` and set the value as per design size.*
+* Install the dependency
 
-```* Design size the size of the design which is in XD, PSD or any file, provided by the Designer``` 
+```bash
+flutter pub add adaptive_ui
+```
+
+Then in your ```constants``` file add two contstants as ```screenWidth``` and ```screenHeight``` and set the value as per design size, Or you can use these value directly in every page you want to make adaptive.*
+
+```* Design size the size of the design which is in XD, PSD or any file, provided by the Designer.``` 
 
 In your UI/Page
 
@@ -45,7 +56,7 @@ class HomePage extends StatelessWidget {
       width: 375, // Design Width
     );
 
-    return AuthLayout(
+    return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -65,18 +76,33 @@ For fonts/texts
 ```dart
 Text(
     "Some text",
-    style: TextStyle(fontSize: 16.0.sp), // Notice ".sp" it is from the helper
+    style: TextStyle(fontSize: 16.sp), // .sp extension method
+),
+```
+
+
+You also can use methods intead extension
+```dart
+Text(
+    "Some text",
+    style: TextStyle(fontSize: sp(16)), // sp() helper method
 ),
 ```
 
 For Height/Width
 ```dart
 Container(
-    height: 200.0.h,
-    width: 200.0.w,
+    height: 200.h, // .h extension method
+    width: 200.w, // .w extension method
 ),
 ```
-
+Same for the height/width you can use methods as well.
+```dart
+Container(
+    height: h(200), // h() helper method
+    width: w(200), // w() helper method
+),
+```
 
 More details...
 ## COMING SOON
