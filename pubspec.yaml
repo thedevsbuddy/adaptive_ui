@@ -1,7 +1,7 @@
 name: adaptive_ui
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: A simple helper class to help you creating Adaptive UI easily.
+version: 0.1.0
+homepage: https://github.com/thedevsbuddy/adaptive_ui
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
