@@ -41,8 +41,8 @@ class HomePage extends StatelessWidget {
     // Initialize the adaptive UI helper class
     AdaptiveUI().init(
       context: context,
-      height: Config.screenHeight, // Design Height
-      width: Config.screenWidth, // Design Width
+      height: 812, // Design Height
+      width: 375, // Design Width
     );
 
     return AuthLayout(
