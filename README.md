@@ -44,7 +44,7 @@ In your UI/Page
 For example ```home_page.dart```
 
 ```dart
-import "helper/adaptive_ui/adaptive_ui.dart";
+import "package:adaptive_ui/adaptive_ui.dart";
 
 class HomePage extends StatelessWidget {
   @override
