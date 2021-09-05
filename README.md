@@ -5,32 +5,48 @@ A simple helper class to help you creating Adaptive UI easily.
 ***
 NOTE: This will work well if you have any sort of design file. like - XD, PSD, Figma, AI, Sketch etc because you can get the design height and width from the file. Because this package depends on the actual design size. 
 ***
-### Features
+
+## What it does?
+It provides dynamic sizes for the elements / widgets in which it's magic method is used, And it calculates the size according to the design size and the current device size.
+
+If the design size is smaller than the current device size then it will increase the size according to current device and return the size and vice versa.
+
+## For Example
+If you have a design which is ```812 height * 375 width``` (iPhone x)
+and you are running your app in a device with the screen size of ```1024 height * 768 width``` (an iPad) 
+then it will calculate the size according to these two screen sizes.
+
+Suppose you provided ```16``` size for the font which was the actual font size in the design
+now when you run the app inside the device of size ```1024 height * 768 width``` then it will apply
+```32.768``` which will be calculated by those two screen sizes.
+
+
+## Features
 * Adaptive Font size
 * Adaptive Height
 * Adaptive Width
 
-### Helper available
+## Helper available
 
 All accepts ```dynamic``` as a parameter but you will always provide ```int``` or ```double``` 
 
-#### Extensions
+### Extensions
 * ```.sp```
 * ```.h```
 * ```.w```
 
-#### Methods
+## Methods
 * ```sp()```
 * ```w()```
 * ```h()```
 
 
-### Effect
+## Effect
 <img src="https://www.devsbuddy.com/assets/images/img_ss_with_lib.png" />
 <img src="https://www.devsbuddy.com/assets/images/img_ss_without_lib.png" />
 
 
-### How to use
+## How to use
 
 * Install the dependency
 
@@ -107,5 +123,4 @@ Container(
 ),
 ```
 
-More details...
-## COMING SOON
+## Thank you for using this package
